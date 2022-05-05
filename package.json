@@ -1,0 +1,27 @@
+{
+  "name": "html5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vagnersantos12/HTML5.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vagnersantos12/HTML5/issues"
+  },
+  "homepage": "https://github.com/vagnersantos12/HTML5#readme",
+  "dependencies": {
+    "add": "^2.0.6",
+    "body-parser": "^1.20.0",
+    "express": "^4.18.1",
+    "mongoose": "^6.3.2"
+  }
+}
