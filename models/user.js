@@ -22,5 +22,5 @@ const UserSchema = new mongoose.Shecma({
   }
 })
 
-const User = mongoose('User', UserSchema)
+const User = mongoose.model('User', UserSchema)
 module.exports = User
