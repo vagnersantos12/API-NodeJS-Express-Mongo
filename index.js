@@ -10,6 +10,8 @@ app.get('/', (req, res) => {
   res.send('OK')
 })
 
-require('./controllers/authController')(app) //app do express objeto definido uma vez para todos os arquivos para não duas aplicações rodando no node.js!
+require('./controllers/authController')(app)
+require('./cotrollers/projectController')(app)
+//app do express objeto definido uma vez para todos os arquivos para não duas aplicações rodando no node.js!
 
 app.listen(3000)
