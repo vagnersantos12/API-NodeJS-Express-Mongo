@@ -47,10 +47,11 @@ router.post('/authenticate', async (req, res) => {
 
   user.password = undefined
 
-  res.send({
-    user,
-    token: generateToken({ id: user.id })
+  const token = jwt.sign({ id: user }, authConfig.secret, {
+    expiresIn: 86400
   })
+
+  res.send({ user, token: generateToken({ id: user.id }) })
 })
 
 module.exports = app => app.user('/auth', router)
